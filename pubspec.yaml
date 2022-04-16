@@ -37,6 +37,7 @@ dependencies:
   flutter_hooks: ^0.18.3
   hooks_riverpod: ^1.0.3
   freezed_annotation: ^1.1.0
+  gap: ^2.0.0
 
 dev_dependencies:
   flutter_test:
