@@ -9,7 +9,12 @@ class CounterHook extends HookConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final counter = ref.watch(counterProvider);
     return Scaffold(
-      body: Text('Count: ${counter.count}'),
+      body: Center(
+        child: Text(
+          'Count: ${counter.count}',
+          style: const TextStyle(fontSize: 24.0),
+        ),
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: counter.increase,
         child: const Icon(Icons.add),
